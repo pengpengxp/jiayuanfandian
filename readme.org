@@ -1,0 +1,20 @@
+# -*- word-wrap: nil; -*-
+#+OPTIONS: ^:{}
+#+STARTUP: align
+#+STARTUP: content
+#+OPTIONS: toc:nil
+
+启动nginx来测试。
+#+BEGIN_SRC sh
+sudo nginx -c conf/nginx.conf -p ./
+#+END_SRC
+
+直接使用下面的脚本拷贝到云主机：
+
+#+BEGIN_SRC sh
+rsync -avz ./ root@121.40.98.98:/root/jiayuanfandian
+#+END_SRC
+
+http://www.jiayuanfandian.xyz
+
+http://121.40.98.98
